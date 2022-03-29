@@ -1,0 +1,12 @@
+from users_app.models impor *
+User.objects.create(first_name="dania", last_name="jazar",email="dhkhalil99@gmail.com",age=23)
+User.objects.create(first_name="fadi",last_name="abu_aita",email="fadimabuaita@gmail.com",age=29)
+User.objects.create(first_name="rahaf",last_name="hosari",email="rahaf@gmail.com",age=25)
+User.objects.all()
+User.objects.last()
+User.objects.first()
+>>> user_to_update = User.objects.get(id=3)
+>>> user_to_update.last_name="pancakes"
+>>> user_to_update.save()
+>>> user_to_del.delete()
+>>> User.objects.all().order_by("first_name")
